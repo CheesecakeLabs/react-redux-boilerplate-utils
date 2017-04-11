@@ -19,11 +19,9 @@
     "url": "https://github.com/CheesecakeLabs/react-redux-boilerplate-utils/issues"
   },
   "homepage": "https://github.com/CheesecakeLabs/react-redux-boilerplate-utils#readme",
-  "dependencies": {
-    "redux-define": "^1.1.0"
-  },
   "peerDependencies": {
-    "immutable": "^3.8.1"
+    "immutable": "^3.8.1",
+    "redux-define": "^1.1.0"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
