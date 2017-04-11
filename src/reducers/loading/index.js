@@ -2,7 +2,7 @@ import { Map } from 'immutable'
 
 import getActionName from '../../utils/get-action-name'
 
-const INITIAL_STATE = new Map()
+export const INITIAL_STATE = new Map()
 
 const isPending = (actionType) => actionType.toString().includes('PENDING')
 

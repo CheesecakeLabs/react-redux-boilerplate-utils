@@ -1,2 +1,2 @@
-export error from './error/reducers'
-export loading from './loading/reducers'
+export error from './error'
+export loading from './loading'

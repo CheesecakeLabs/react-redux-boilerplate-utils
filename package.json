@@ -4,7 +4,8 @@
   "description": "boilerplate utils as a module",
   "main": "./index.js",
   "scripts": {
-    "test": "npm test",
+    "test": "jest",
+    "tdd": "yarn test -- --watch",
     "eslint": "eslint src",
     "build": "rm -fr build && babel src --out-dir build && cp package.json build",
     "deploy": "npm run build && cd build && npm publish --access=public"
@@ -34,6 +35,18 @@
     "eslint-config-airbnb": "^14.1.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
-    "eslint-plugin-react": "^6.10.3"
+    "eslint-plugin-react": "^6.10.3",
+    "jest": "^19.0.2"
+  },
+  "jest": {
+    "verbose": false,
+    "transform": {
+      ".*": "babel-jest"
+    },
+    "moduleFileExtensions": [
+      "js"
+    ],
+    "setupFiles": [],
+    "testPathIgnorePatterns": []
   }
 }
