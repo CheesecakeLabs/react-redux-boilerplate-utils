@@ -1,0 +1,41 @@
+{
+  "name": "@ckldeveloper/boilerplate",
+  "version": "1.0.0",
+  "description": "boilerplate utils as a module",
+  "main": "./index.js",
+  "scripts": {
+    "test": "npm test",
+    "eslint": "eslint src",
+    "build": "rm -fr build && babel src --out-dir build && cp package.json build",
+    "deploy": "npm run build && cd build && npm publish --access=public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CheesecakeLabs/react-redux-boilerplate-utils.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CheesecakeLabs/react-redux-boilerplate-utils/issues"
+  },
+  "homepage": "https://github.com/CheesecakeLabs/react-redux-boilerplate-utils#readme",
+  "dependencies": {
+    "redux-define": "^1.1.0"
+  },
+  "peerDependencies": {
+    "immutable": "^3.8.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-eslint": "^7.2.1",
+    "babel-jest": "^19.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-register": "^6.24.1",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.3"
+  }
+}
