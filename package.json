@@ -1,6 +1,6 @@
 {
-  "name": "@ckldeveloper/boilerplate",
-  "version": "1.0.0",
+  "name": "@cheesecakelabs/boilerplate",
+  "version": "0.0.0",
   "description": "boilerplate utils as a module",
   "main": "./index.js",
   "scripts": {
