@@ -18,7 +18,7 @@ module.exports = {
     }],
     'import/no-extraneous-dependencies': ['error', { devDependencies: ['**/stories.js', '**/*.dev.js', '**/*.test.js', 'server.js'] }],
     'react/jsx-filename-extension': 0,
-    'arrow-parens': 0,
+    'arrow-parens': ['error', 'always'],
   },
   plugins: [
     'react',
