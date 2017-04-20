@@ -10,6 +10,9 @@
     "build": "rm -fr build && babel src --out-dir build && cp package.json build",
     "deploy": "npm run build && cd build && npm publish --access=public"
   },
+  "bin": {
+    "generate-view-tests": "./bin/view-generator.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CheesecakeLabs/react-redux-boilerplate-utils.git"
@@ -48,5 +51,10 @@
     ],
     "setupFiles": [],
     "testPathIgnorePatterns": []
+  },
+  "dependencies": {
+    "glob": "^7.1.1",
+    "mkdirp": "^0.5.1",
+    "yargs": "^7.1.0"
   }
 }
