@@ -1322,6 +1322,15 @@ eslint-config-airbnb@^14.1.0:
   dependencies:
     eslint-config-airbnb-base "^11.1.0"
 
+eslint-config-cheesecakelabs@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-cheesecakelabs/-/eslint-config-cheesecakelabs-0.1.0.tgz#1cefcc90e89e423ecf150fef917d27309bc77f8c"
+  dependencies:
+    eslint-config-airbnb "^14.1.0"
+    eslint-plugin-import "^2.2.0"
+    eslint-plugin-jsx-a11y "^4.0.0"
+    eslint-plugin-react "^6.10.3"
+
 eslint-import-resolver-node@^0.2.0:
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/eslint-import-resolver-node/-/eslint-import-resolver-node-0.2.3.tgz#5add8106e8c928db2cba232bcd9efa846e3da16c"
