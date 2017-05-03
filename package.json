@@ -36,7 +36,9 @@
     "babel-register": "^6.24.1",
     "eslint": "^3.19.0",
     "eslint-config-cheesecakelabs": "^0.1.0",
-    "jest": "^19.0.2"
+    "immutable": "^3.8.1",
+    "jest": "^19.0.2",
+    "redux-define": "^1.1.1"
   },
   "jest": {
     "verbose": false,
