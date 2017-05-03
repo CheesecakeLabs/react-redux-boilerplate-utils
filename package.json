@@ -29,17 +29,16 @@
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
-    "babel-eslint": "^7.2.1",
+    "babel-eslint": "^7.2.3",
     "babel-jest": "^19.0.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "babel-register": "^6.24.1",
     "eslint": "^3.19.0",
-    "eslint-config-airbnb": "^14.1.0",
-    "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-jsx-a11y": "^4.0.0",
-    "eslint-plugin-react": "^6.10.3",
-    "jest": "^19.0.2"
+    "eslint-config-cheesecakelabs": "^0.1.0",
+    "immutable": "^3.8.1",
+    "jest": "^19.0.2",
+    "redux-define": "^1.1.1"
   },
   "jest": {
     "verbose": false,
