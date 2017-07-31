@@ -2,7 +2,7 @@ module.exports = {
   extends: 'stylelint-config-standard',
   rules: {
     'property-no-unknown': [true, {
-      ignoreProperties: ['composes'],
+      ignoreProperties: ['composes', '/^lost-/'],
     }],
     'selector-pseudo-class-no-unknown': [true, {
       ignorePseudoClasses: ['global'],
