@@ -5,7 +5,7 @@
   "main": "./index.js",
   "scripts": {
     "test": "jest",
-    "tdd": "yarn test -- --watch",
+    "tdd": "yarn test --watch",
     "eslint": "eslint src",
     "build": "rm -fr build && babel src --out-dir build && cp package.json build",
     "deploy": "npm run build && cd build && npm publish --access=public"
