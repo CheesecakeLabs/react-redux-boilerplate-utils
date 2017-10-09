@@ -39,7 +39,7 @@ const store = configureStore()
 
 it('should render ${component}${componentName} without props', () => {
   expect(() => {
-    render(<Provider store={store}><Component params={{}} location={{ query: {} }} children={''} /></Provider>)
+    render(<Provider store={store}><Component params={{}} location={{ query: {}, pathname: '' }} children={''} /></Provider>)
   }).not.toThrow()
 })
 `, basePath, testFileName]
