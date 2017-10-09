@@ -7,7 +7,7 @@
     "test": "jest",
     "tdd": "yarn test --watch",
     "eslint": "eslint src",
-    "build": "rm -fr build && babel src --out-dir build && cp package.json build",
+    "build": "rm -fr build && babel src --out-dir build && cp package.json build && cp .npmignore build",
     "deploy": "npm run build && cd build && npm publish --access=public"
   },
   "bin": {
