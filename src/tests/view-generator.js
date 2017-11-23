@@ -7,7 +7,7 @@ const mkdirp = require('mkdirp')
 
 const BASE_TEST_PATH_DIR = yargs.argv.output || './tests/__tests__/'
 const VIEWS_PATH = yargs.argv.views || './src/views'
-const IGNORED_FILES = (yargs.argv.ignore && yargs.argv.ignore.split(',')) || ['**/**/stories.js']
+const IGNORED_FILES = yargs.argv.ignore || ['**/**/stories.js', '**/**/*.test.js']
 
 let tests = 0
 
