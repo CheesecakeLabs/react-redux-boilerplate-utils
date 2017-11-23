@@ -7,12 +7,13 @@ const mkdirp = require('mkdirp')
 
 const BASE_TEST_PATH_DIR = yargs.argv.output || './tests/__tests__/'
 const VIEWS_PATH = yargs.argv.views || './src/views'
+const IGNORED_FILES = (yargs.argv.ignore && yargs.argv.ignore.split(',')) || ['**/**/stories.js']
 
 let tests = 0
 
 const tree = fs.readdirSync(VIEWS_PATH).map((component) => ([
   component, glob.sync(path.join(VIEWS_PATH, component, '**', '*.js'), {
-    ignore: ['**/**/stories.js'],
+    ignore: IGNORED_FILES,
   }),
 ]))
 
