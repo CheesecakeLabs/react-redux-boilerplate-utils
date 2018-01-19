@@ -7,6 +7,8 @@
     "test": "jest",
     "tdd": "yarn test --watch",
     "eslint": "eslint src",
+    "installpeerdeps":
+      "yarn add -P --no-lockfile $(node -e \"process.stdout.write(String(Object.entries(require('./package.json').peerDependencies).map(d => d.join('@')).join(' ')))\")",
     "build":
       "rm -fr build && babel src --ignore **/*.test.js --out-dir build && cp package.json build && cp .npmignore build",
     "deploy": "npm run build && cd build && npm publish --access=public"
@@ -26,7 +28,8 @@
   "homepage": "https://github.com/CheesecakeLabs/react-redux-boilerplate-utils#readme",
   "peerDependencies": {
     "immutable": "^3",
-    "redux-define": "^1"
+    "redux-define": "^1",
+    "reselect": "^3.0.1"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
@@ -36,10 +39,10 @@
     "babel-preset-stage-0": "^6.24.1",
     "babel-register": "^6.24.1",
     "eslint": "^3.19.0",
-    "eslint-config-cheesecakelabs": "^0.1.0",
-    "immutable": "^3.8.1",
+    "eslint-config-cheesecakelabs": "^2.0.3",
+    "immutable": "^3",
     "jest": "^19.0.2",
-    "redux-define": "^1.1.1"
+    "redux-define": "^1"
   },
   "jest": {
     "verbose": false,

@@ -1,4 +1,5 @@
 export utils from './utils'
 export reducers from './reducers'
+export selectors from './selectors'
 export middlewares from './middlewares'
 export stylelint from './stylelint'
