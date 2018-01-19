@@ -7,7 +7,8 @@
     "test": "jest",
     "tdd": "yarn test --watch",
     "eslint": "eslint src",
-    "build": "rm -fr build && babel src --out-dir build && cp package.json build && cp .npmignore build",
+    "build":
+      "rm -fr build && babel src --ignore **/*.test.js --out-dir build && cp package.json build && cp .npmignore build",
     "deploy": "npm run build && cd build && npm publish --access=public"
   },
   "bin": {
@@ -45,9 +46,7 @@
     "transform": {
       ".*": "babel-jest"
     },
-    "moduleFileExtensions": [
-      "js"
-    ],
+    "moduleFileExtensions": ["js"],
     "setupFiles": [],
     "testPathIgnorePatterns": []
   },
